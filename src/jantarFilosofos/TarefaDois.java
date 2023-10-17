@@ -21,14 +21,11 @@ public class TarefaDois {
 			thread[L].setName( String.valueOf(L) );
 			thread[L].start();
 		}
-		
-		greenLight = true;
 	}
 	
 	static Thread[] thread = new Thread[RunnableThread.quantidade];
 	static boolean[] jantaram = new boolean[RunnableThread.quantidade];
 	static int[] quant = new int[RunnableThread.quantidade];
-	static boolean greenLight = false;
 	static int acoes = 0;
 	static int loops = 0;
 
@@ -164,5 +161,3 @@ enum StatusFilosofo {
 	Terminou,
 	Iniciou,
 }
-
-//Test
